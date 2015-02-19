@@ -28,7 +28,7 @@ PREFIX		?= arm-none-eabi
 
 CC		= $(PREFIX)-gcc
 AR		= $(PREFIX)-gcc-ar
-CFLAGS		= -O2 -g3 -flto \
+CFLAGS		= -O2 -g3 -flto -ffat-lto-objects \
 		  -Wall -Wextra -Wimplicit-function-declaration \
 		  -Wredundant-decls -Wmissing-prototypes -Wstrict-prototypes \
 		  -Wundef -Wshadow \
