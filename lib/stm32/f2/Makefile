@@ -23,7 +23,7 @@ SRCLIBDIR	?= ../..
 PREFIX		?= arm-none-eabi
 
 CC		= $(PREFIX)-gcc
-AR		= $(PREFIX)-ar
+AR		= $(PREFIX)-gcc-ar
 CFLAGS		= -Os -g \
 		  -Wall -Wextra -Wimplicit-function-declaration \
 		  -Wredundant-decls -Wmissing-prototypes -Wstrict-prototypes \
