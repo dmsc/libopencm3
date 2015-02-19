@@ -41,7 +41,7 @@
 
 %.elf: $(OBJS) $(LDSCRIPT) $(LIBDEPS)
 	@printf "  LD      $(*).elf\n"
-	$(Q)$(LD) $(OBJS) $(LDLIBS) $(LDFLAGS) -T$(LDSCRIPT) $(ARCH_FLAGS)  -o $@
+	$(Q)$(LD) $(CFLAGS) $(OBJS) $(LDLIBS) $(LDFLAGS) -T$(LDSCRIPT) $(ARCH_FLAGS)  -o $@
 
 %.o: %.c
 	@printf "  CC      $<\n"
